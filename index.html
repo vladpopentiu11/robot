@@ -36,10 +36,10 @@
 
   </div>
 
-  <script>
-    document.getElementById("reloadButton").addEventListener("click", function() {
-           window.location.href = window.location.href.split('?')[0] + '?t=' + new Date().getTime();
+   <script>
+        document.getElementById("reloadButton").addEventListener("click", function() {
+            // Reload the page and clear the cache
+            window.location.href = window.location.href.split('?')[0] + '?t=' + new Date().getTime();
         });
-    });
-</script>
+    </script>
 </body>
