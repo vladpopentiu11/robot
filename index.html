@@ -38,7 +38,7 @@
 
   <script>
     document.getElementById("reloadButton").addEventListener("click", function() {
-            window.location.href = window.location.href;
+           window.location.href = window.location.href.split('?')[0] + '?t=' + new Date().getTime();
         });
     });
 </script>
