@@ -18,14 +18,31 @@
         width: calc(30% - 16px); /* 50% width for desktop, accounting for gap */
     }
 }
+    .button-wrapper {
+            display: flex;
+            justify-content: center; /* Center the button horizontally */
+            align-items: center; /* Center the button vertically */
+            height: 100vh; /* Full viewport height */
+        }
+        #reloadButton {
+            padding: 15px 30px; /* Increase button size */
+            font-size: 18px; /* Increase font size */
+            color: white; /* Button text color */
+            background-color: #007BFF; /* Button background color */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Change cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
   </style>
 
   
   <head>
   
 <body>
-  <button id="reloadButton">Reload</button>
-
+     <div class="button-wrapper">
+        <button id="reloadButton">Reload Page</button>
+    </div>
   <div class="icon-container">
 <dotlottie-player src="https://lottie.host/c867d239-4be5-442d-b0fb-82845166cca5/NsG8AT3uIv.json" background="transparent" speed="1" style="height: auto;" loop autoplay></dotlottie-player>
 <dotlottie-player src="https://lottie.host/b1a3e9d1-084d-42bf-a997-a71762214b22/5hgL9B9J3d.json" background="transparent" speed="1" style="height: auto;" loop autoplay></dotlottie-player>
